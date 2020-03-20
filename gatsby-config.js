@@ -4,7 +4,7 @@ module.exports = {
     description: `Apps that makes people happy`,
     author: `David Dal Busco`,
     url: `https://happy-apps.org`,
-    image: "/images/daviddalbusco.jpg",
+    image: "/images/happy-meta.png",
     twitterUsername: "@daviddalbusco",
     siteUrl: `https://happy-apps.org`
   },
