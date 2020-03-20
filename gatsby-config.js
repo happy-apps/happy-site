@@ -2,7 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Happy Apps`,
     description: `Apps that makes people happy`,
-    author: `@daviddalbusco`,
+    author: `David Dal Busco`,
+    url: `https://happy-apps.org`,
+    image: "/images/daviddalbusco.jpg",
+    twitterUsername: "@daviddalbusco",
+    siteUrl: `https://happy-apps.org`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
