@@ -1,7 +1,7 @@
 {
   "name": "happy-site",
   "private": true,
-  "description": "Happy Apps",
+  "description": "Apps that makes people happy",
   "version": "0.0.1",
   "author": "David Dal Busco <david@fluster.io>",
   "dependencies": {
