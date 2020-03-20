@@ -5,6 +5,16 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import { library, config } from "@fortawesome/fontawesome-svg-core"
+
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
+// https://github.com/FortAwesome/react-fontawesome/issues/134#issuecomment-471940596
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
+
+library.add(faGithub)
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
