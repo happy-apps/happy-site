@@ -6,7 +6,11 @@ module.exports = {
     url: `https://happy-apps.org`,
     image: "/images/happy-meta.png",
     twitterUsername: "@daviddalbusco",
-    siteUrl: `https://happy-apps.org`
+    siteUrl: `https://happy-apps.org`,
+    languages: {
+      langs: ['en'],
+      defaultLangKey: 'en'
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,6 +44,14 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`
+    `gatsby-plugin-robots-txt`,
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        useLangKeyLayout: true,
+        prefixDefault: true
+      }
+    }
   ],
 }

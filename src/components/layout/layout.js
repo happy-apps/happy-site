@@ -1,31 +1,41 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "../header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+import { FormattedMessage, IntlProvider } from "react-intl"
+import "@formatjs/intl-pluralrules/polyfill"
+
+import { getCurrentLangKey } from 'ptz-i18n';
+
+const Layout = ({ children, location, messages }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
+          languages {
+            defaultLangKey
+            langs
+          }
         }
       }
     }
   `)
 
+  const { langs, defaultLangKey } = data.site.siteMetadata.languages;
+  const langKey = getCurrentLangKey(langs, defaultLangKey, location.pathname);
+
   return (
-    <>
+    <IntlProvider locale={langKey} messages={messages}>
       <Header siteTitle={data.site.siteMetadata.title} />
+
+      <p>
+        <FormattedMessage id="hello" />
+      </p>
+
       <div
         style={{
           margin: `0 auto`,
@@ -40,12 +50,14 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </IntlProvider>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  location: PropTypes.node.isRequired,
+  messages: PropTypes.node.isRequired,
 }
 
 export default Layout
