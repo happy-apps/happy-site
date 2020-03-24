@@ -2,8 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "../header"
-import "./layout.css"
+import "../../theme/theme.scss"
+
+import Header from "../header/header"
+import "./layout.scss"
 
 import { FormattedMessage, IntlProvider } from "react-intl"
 import "@formatjs/intl-pluralrules/polyfill"
@@ -56,8 +58,8 @@ const Layout = ({ children, location, messages }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  location: PropTypes.node.isRequired,
-  messages: PropTypes.node.isRequired,
+  location: PropTypes.any.isRequired,
+  messages: PropTypes.any.isRequired,
 }
 
 export default Layout
