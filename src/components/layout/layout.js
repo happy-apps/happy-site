@@ -10,7 +10,9 @@ import "@formatjs/intl-pluralrules/polyfill"
 
 import { getCurrentLangKey } from "ptz-i18n"
 
-const Layout = ({ children, location, messages }) => {
+import Navigation from "../navigation/navigation"
+
+const Layout = ({ children, location, messages, delayNavigation }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,6 +32,12 @@ const Layout = ({ children, location, messages }) => {
 
   return (
     <IntlProvider locale={langKey} messages={messages}>
+      <Navigation
+        messages={messages}
+        delayNavigation={delayNavigation}
+        langKey={langKey}
+      ></Navigation>
+
       <div
         style={{
           margin: `0 auto`,
@@ -52,6 +60,7 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   location: PropTypes.any.isRequired,
   messages: PropTypes.any.isRequired,
+  delayNavigation: PropTypes.bool.isRequired,
 }
 
 export default Layout
