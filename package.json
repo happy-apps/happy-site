@@ -55,5 +55,9 @@
   "bugs": {
     "url": "https://github.com/peterpeterparker/happy-site/issues"
   },
-  "husky": { "hooks": { "pre-commit": "pretty-quick --staged" } }
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
 }
