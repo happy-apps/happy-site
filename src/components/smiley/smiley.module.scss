@@ -1,4 +1,9 @@
 .smiley {
+  img,
+  > div {
+    z-index: 2;
+  }
+
   img {
     position: absolute;
 
@@ -11,7 +16,7 @@
 
   > div {
     display: block;
-    background: #FFE600;
+    background: #ffe600;
 
     border-radius: 50%;
 
