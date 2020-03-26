@@ -5,13 +5,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import "../../theme/theme.scss"
 import "../../theme/fonts.scss"
 
-import Header from "../header/header"
-import "./layout.scss"
-
-import { FormattedMessage, IntlProvider } from "react-intl"
+import { IntlProvider } from "react-intl"
 import "@formatjs/intl-pluralrules/polyfill"
 
-import { getCurrentLangKey } from 'ptz-i18n';
+import { getCurrentLangKey } from "ptz-i18n"
 
 const Layout = ({ children, location, messages }) => {
   const data = useStaticQuery(graphql`
@@ -28,17 +25,11 @@ const Layout = ({ children, location, messages }) => {
     }
   `)
 
-  const { langs, defaultLangKey } = data.site.siteMetadata.languages;
-  const langKey = getCurrentLangKey(langs, defaultLangKey, location.pathname);
+  const { langs, defaultLangKey } = data.site.siteMetadata.languages
+  const langKey = getCurrentLangKey(langs, defaultLangKey, location.pathname)
 
   return (
     <IntlProvider locale={langKey} messages={messages}>
-      <Header siteTitle={data.site.siteMetadata.title} />
-
-      <p>
-        <FormattedMessage id="hello" />
-      </p>
-
       <div
         style={{
           margin: `0 auto`,

@@ -4,20 +4,23 @@ import { Link } from "gatsby"
 import Layout from "../components/layout/en"
 import Image from "../components/image"
 import SEO from "../components/seo/seo"
+import Header from "../components/header/header"
 
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 // https://github.com/FortAwesome/react-fontawesome/issues/134#issuecomment-471940596
-import '@fortawesome/fontawesome-svg-core/styles.css';
-config.autoAddCss = false;
+import "@fortawesome/fontawesome-svg-core/styles.css"
+config.autoAddCss = false
 
 library.add(faGithub)
 
-const IndexPage = (props) => (
+const IndexPage = props => (
   <Layout location={props.location}>
     <SEO />
+    <Header />
+
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
