@@ -1,4 +1,4 @@
-div.smiley {
+.smiley {
   img {
     position: absolute;
 
@@ -36,6 +36,19 @@ div.smiley {
       animation-iteration-count: 1;
     }
   }
+
+  @media (orientation: portrait) and (max-width: 992px) {
+    img {
+      top: 60%;
+
+      max-height: 60vw;
+    }
+
+    > div {
+      width: 80vw;
+      height: 80vw;
+    }
+  }
 }
 
 @keyframes moveHappy {
@@ -55,19 +68,6 @@ div.smiley {
 }
 
 @media (orientation: portrait) and (max-width: 992px) {
-  div.smiley {
-    img {
-      top: 60%;
-
-      max-height: 60vw;
-    }
-
-    > div {
-      width: 80vw;
-      height: 80vw;
-    }
-  }
-
   @keyframes moveHappy {
     100% {
       top: 56%;

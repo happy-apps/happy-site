@@ -1,12 +1,12 @@
 import React from "react"
 
-import "./smiley.scss"
+import styles from "./smiley.module.scss"
 
 class Smiley extends React.Component {
 
   render() {
     return (
-      <div className={`smiley ${this.props.animate ? 'animate' : ''}`}>
+      <div className={`${styles.smiley} ${this.props.animate ? `${styles.animate}` : ''}`}>
         <div></div>
 
         <img src={"/images/smiley.svg"} role="presentation" alt="Smiley" />
