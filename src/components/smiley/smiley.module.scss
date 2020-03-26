@@ -32,7 +32,7 @@
 
   &.animate {
     img {
-      animation: moveHappy 0.4s infinite forwards ease-out;
+      animation: moveHappy 0.8s infinite forwards ease-out;
       animation-iteration-count: 1;
     }
 
@@ -57,6 +57,11 @@
 }
 
 @keyframes moveHappy {
+  60% {
+    top: 60%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+
   100% {
     top: 60%;
     transform: translate(-50%, -50%) rotate(0deg);
@@ -74,6 +79,11 @@
 
 @media (orientation: portrait) and (max-width: 992px) {
   @keyframes moveHappy {
+    60% {
+      top: 56%;
+      transform: translate(-50%, -50%) rotate(-4deg);
+    }
+
     100% {
       top: 56%;
       transform: translate(-50%, -50%) rotate(0deg);
