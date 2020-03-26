@@ -1,3 +1,3 @@
 module.exports = {
-  hello: "Hello world",
+  "intro.happy": "apps that make people <strong>happy.</strong>",
 }
