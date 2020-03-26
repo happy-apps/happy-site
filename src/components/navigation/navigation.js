@@ -32,7 +32,11 @@ class Navigation extends React.Component {
           className={`${styles.navigation} ${
             !this.props.delayNavigation ? `${styles.instant}` : ""
           } ${this.state.startAnimation ? `${styles.animate}` : ""}`}
-          title={this.props.messages["menu.explore"]}
+          title={
+            this.props.messages
+              ? this.props.messages["menu.explore"]
+              : "Explore"
+          }
           onClick={() => this.toggleMenu()}
         >
           <span>
