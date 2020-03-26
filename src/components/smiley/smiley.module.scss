@@ -70,7 +70,7 @@
     }
   }
 
-  @media (orientation: portrait) and (max-width: 992px) {
+  @media (orientation: portrait) {
     img {
       top: 60%;
 
@@ -110,7 +110,7 @@
   }
 }
 
-@media (orientation: portrait) and (max-width: 992px) {
+@media (orientation: portrait) {
   @keyframes moveHappy {
     60% {
       top: 56%;
