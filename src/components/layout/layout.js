@@ -41,7 +41,7 @@ const Layout = ({ children, location, messages, delayNavigation }) => {
 
       <main>{children}</main>
 
-      <Footer />
+      <Footer langKey={langKey} />
     </IntlProvider>
   )
 }

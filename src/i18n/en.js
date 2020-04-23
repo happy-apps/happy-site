@@ -21,4 +21,5 @@ module.exports = {
   "refuse.title": "Refuse",
   "refuse.content":
     "We reject projects that do not have a positive social or environmental impact. We code for a better future. We ride trains and bicycles to visit our clients.",
+  "check.out.appetizers": "check out our <strong>app</strong>etizers",
 }

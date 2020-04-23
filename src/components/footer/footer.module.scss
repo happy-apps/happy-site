@@ -18,3 +18,18 @@
     transform: translate(-50%, 0);
   }
 }
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  top: 4rem;
+  transform: translate(-50%, 0);
+
+  span {
+    margin-right: 4px;
+  }
+}
