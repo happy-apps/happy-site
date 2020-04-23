@@ -11,6 +11,7 @@ import "@formatjs/intl-pluralrules/polyfill"
 import { getCurrentLangKey } from "ptz-i18n"
 
 import Navigation from "../navigation/navigation"
+import Footer from "../footer/footer"
 
 const Layout = ({ children, location, messages, delayNavigation }) => {
   const data = useStaticQuery(graphql`
@@ -39,6 +40,8 @@ const Layout = ({ children, location, messages, delayNavigation }) => {
       ></Navigation>
 
       <main>{children}</main>
+
+      <Footer />
     </IntlProvider>
   )
 }

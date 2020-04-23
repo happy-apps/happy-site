@@ -4,6 +4,7 @@ import Bubble from "../bubble/bubble"
 import RValue from "../r-value/r-value"
 
 import styles from "./intro.module.scss"
+
 import { FormattedMessage } from "react-intl"
 
 class Intro extends React.Component {
