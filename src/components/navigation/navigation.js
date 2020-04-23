@@ -24,7 +24,7 @@ class Navigation extends React.Component {
     if (this.props.delayNavigation) {
       setTimeout(() => {
         this.setState({ startAnimation: true })
-      }, 750)
+      }, 1550)
     }
   }
 

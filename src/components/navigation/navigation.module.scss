@@ -18,20 +18,23 @@ nav.navigation {
     opacity: 0;
     visibility: hidden;
 
-    transition: opacity 0.25s 0.8s ease-in;
+    transition: opacity 0.25s ease-in;
   }
 
   &.animate,
   &.instant {
     img,
-    button {
+    button,
+    button span {
       opacity: 1;
       visibility: inherit;
+
+      transition: opacity 0.25s ease-in;
     }
 
     &.fix {
-      img {
-        transition: opacity 0.25s ease-out;
+      img,
+      button span {
         opacity: 0;
       }
     }
