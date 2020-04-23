@@ -22,6 +22,14 @@ class Header extends React.Component {
     }, 750)
   }
 
+  scrollComeInside() {
+    window.scrollBy({
+      top: 600,
+      left: 0,
+      behavior: "smooth",
+    })
+  }
+
   render() {
     return (
       <section className={styles.header}>
@@ -74,6 +82,7 @@ class Header extends React.Component {
         ></Bubble>
 
         <button
+          onClick={() => this.scrollComeInside()}
           className={`${styles.comeInside} ${
             this.state.startAnimation ? styles.animate : ""
           }`}
