@@ -27,11 +27,19 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <>
+      <nav
+        className={`${styles.navigation} ${
+          !this.props.delayNavigation ? `${styles.instant}` : ""
+        } ${this.state.startAnimation ? `${styles.animate}` : ""}`}
+      >
+        <img
+          src={"/images/happy-logo.svg"}
+          role="presentation"
+          alt="Happy Logo"
+          className={`${styles.logo}`}
+        />
+
         <button
-          className={`${styles.navigation} ${
-            !this.props.delayNavigation ? `${styles.instant}` : ""
-          } ${this.state.startAnimation ? `${styles.animate}` : ""}`}
           title={
             this.props.messages
               ? this.props.messages["menu.explore"]
@@ -46,7 +54,7 @@ class Navigation extends React.Component {
         </button>
 
         <Menu ref={el => (this.childMenu = el)} langKey={this.props.langKey} />
-      </>
+      </nav>
     )
   }
 
