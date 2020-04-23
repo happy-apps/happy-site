@@ -18,3 +18,15 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.values {
+  position: relative;
+  display: block;
+  height: 100%;
+
+  .bubbles {
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+}

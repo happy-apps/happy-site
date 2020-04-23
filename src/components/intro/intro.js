@@ -32,7 +32,39 @@ class Intro extends React.Component {
           </Bubble>
         </section>
 
-        <section>
+        <section className={styles.values}>
+          <div className={styles.bubbles}>
+            <Bubble
+              animate={false}
+              customStyle={{
+                "--size": "60rem",
+                "--background": "#FFE200",
+                "--top": "16rem",
+                "--left": "-16%",
+              }}
+            ></Bubble>
+
+            <Bubble
+              animate={false}
+              customStyle={{
+                "--size": "60rem",
+                "--background": "#FF80B1",
+                "--top": "36rem",
+                "--right": "-74rem",
+              }}
+            ></Bubble>
+
+            <Bubble
+              animate={false}
+              customStyle={{
+                "--size": "32rem",
+                "--background": "#80D3FF",
+                "--bottom": "-25rem",
+                "--left": "4rem",
+              }}
+            ></Bubble>
+          </div>
+
           <p>
             <FormattedMessage
               id="5.rs"
