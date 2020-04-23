@@ -25,6 +25,9 @@
     max-width: var(--max-size-mobile);
     max-height: var(--max-size-mobile);
 
+    width: var(--size-mobile, var(--size));
+    height: var(--size-mobile, var(--size));
+
     top: var(--top-mobile, var(--top));
     left: var(--left-mobile, var(--left));
     bottom: var(--bottom-mobile, var(--bottom));

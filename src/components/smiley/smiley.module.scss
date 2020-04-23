@@ -31,8 +31,6 @@
   }
 
   > h1 {
-    font-weight: 500;
-
     position: absolute;
 
     max-width: 70vh;
@@ -42,10 +40,6 @@
     transform: translate(-50%, -50%);
 
     z-index: 3;
-
-    text-align: center;
-
-    font-size: 8vh;
 
     visibility: hidden;
     opacity: 0;

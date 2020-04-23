@@ -4,6 +4,7 @@ import Smiley from "../smiley/smiley"
 import Bubble from "../bubble/bubble"
 
 import styles from "./header.module.scss"
+
 import { FormattedMessage } from "react-intl"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
