@@ -4,3 +4,36 @@
 
   overflow-x: hidden;
 }
+
+.come-inside {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  cursor: pointer;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -16px);
+
+  z-index: 3;
+
+  transition: opacity 0.25s 0.8s ease-in;
+
+  opacity: 0;
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    line-height: 1rem;
+  }
+
+  &.animate {
+    visibility: visible;
+    opacity: 1;
+  }
+}

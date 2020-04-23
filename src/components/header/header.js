@@ -4,6 +4,8 @@ import Smiley from "../smiley/smiley"
 import Bubble from "../bubble/bubble"
 
 import styles from "./header.module.scss"
+import { FormattedMessage } from "react-intl"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class Header extends React.Component {
   constructor(props) {
@@ -69,6 +71,17 @@ class Header extends React.Component {
             "--move-right-mobile": "-100%",
           }}
         ></Bubble>
+
+        <button
+          className={`${styles.comeInside} ${
+            this.state.startAnimation ? styles.animate : ""
+          }`}
+        >
+          <span>
+            <FormattedMessage id="intro.come.inside" />
+          </span>
+          <FontAwesomeIcon icon={["fas", "angle-down"]} size="2x" />
+        </button>
       </section>
     )
   }
