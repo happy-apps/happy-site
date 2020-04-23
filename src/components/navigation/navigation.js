@@ -14,14 +14,33 @@ class Navigation extends React.Component {
     super(props)
     this.state = {
       startAnimation: false,
+      scrolled: false,
     }
   }
 
   componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+
     if (this.props.delayNavigation) {
       setTimeout(() => {
         this.setState({ startAnimation: true })
       }, 750)
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
+  }
+
+  handleScroll = _$event => {
+    const scrolledSize =
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      0
+    const scrollTrigger = scrolledSize > 40
+    if (this.state.scrolled !== scrollTrigger) {
+      this.setState({ scrolled: scrollTrigger })
     }
   }
 
@@ -30,7 +49,9 @@ class Navigation extends React.Component {
       <nav
         className={`${styles.navigation} ${
           !this.props.delayNavigation ? `${styles.instant}` : ""
-        } ${this.state.startAnimation ? `${styles.animate}` : ""}`}
+        } ${this.state.startAnimation ? `${styles.animate}` : ""} ${
+          this.state.scrolled ? `${styles.fix}` : ""
+        }`}
       >
         <img
           src={"/images/happy-logo.svg"}
