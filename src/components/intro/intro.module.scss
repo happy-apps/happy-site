@@ -1,14 +1,14 @@
 .weCreate {
   position: relative;
 
-  padding: 80vh 0;
+  display: block;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 80vh;
+  margin: 34vh 0 40px;
 
   @media (orientation: portrait) {
-    padding: 40vh 0;
+    height: 120vw;
+    margin: 10vh 0 40px;
   }
 
   h1 {

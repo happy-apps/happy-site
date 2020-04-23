@@ -1,0 +1,17 @@
+.rvalue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 60px;
+
+  p {
+    max-width: 20rem;
+    margin: 0;
+  }
+
+  img {
+    width: 5rem;
+  }
+}

@@ -251,20 +251,15 @@ h2 {
   text-align: center;
 }
 h3 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  padding: 0;
+  margin: 0 0 0.45rem;
   color: inherit;
-  font-weight: 500;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
   text-align: center;
+  text-transform: uppercase;
 }
 h4 {
   margin-left: 0;
@@ -369,14 +364,9 @@ dd {
   margin-bottom: 1.45rem;
 }
 p {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  padding: 0;
+  margin: 0 0 1.45rem;
+  text-align: center;
 }
 figure {
   margin-left: 0;
