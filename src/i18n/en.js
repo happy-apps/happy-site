@@ -49,4 +49,20 @@ module.exports = {
   "portfolio.img.working2": "Working",
   "portfolio.happy.software": "<strong>happy</strong> software",
   "portfolio.img.cat": "Cat",
+  "about.we.are":
+    "We are a group of friends - designers, programmers and good souls - from the Impact Hub Zurich community - a coworking ecosystem with over 1000 members. We decided to put our heads together and <strong>happy</strong> was born.",
+  "about.we.create":
+    " We create software that puts people first - we prototype, test, learn and improve. Our software is and will always be open source. We also share what we have learned.",
+  "about.we.love":
+    " We particularly love to make software for people who are less privileged, frail, disadvantaged or discriminated against.",
+  "about.we.happy":
+    "We celebrate friendship, openness and tolerance. We were born to learn. Our goal is to make people <strong>happy</strong>.",
+  "about.contact.get.happy.too": "get <strong>happy</strong> too",
+  "about.contact.way": "We’re sure there is a way to make you happy.",
+  "about.contact.your.name": "Your name",
+  "about.contact.your.email": "Your email",
+  "about.contact.your.phone": "Your phone",
+  "about.contact.your.message": "Your message",
+  "about.contact.thanks": "Thanks!",
+  "about.contact.oops": "Ooops! There was an error.",
 }
