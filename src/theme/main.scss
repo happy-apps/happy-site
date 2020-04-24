@@ -18,6 +18,13 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+  main {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 @media (min-width: 992px) {
   main {
     max-width: 960px;
