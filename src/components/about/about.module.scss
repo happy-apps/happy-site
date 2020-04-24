@@ -1,0 +1,157 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10rem 0 2rem;
+
+  :global * {
+    z-index: 3;
+  }
+
+  h1 {
+    display: inline-block;
+
+    background-size: 100% 200%;
+    background-position: 0 0;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(50% - 9px),
+      #ff80b1 calc(50% - 9px),
+      #ff80b1
+    );
+  }
+
+  p {
+    padding-top: 1rem;
+    max-width: 20rem;
+  }
+}
+
+.pink {
+  color: #ff80b1;
+  font-weight: 700;
+}
+
+.contact {
+  position: relative;
+
+  display: block;
+
+  height: 110vh;
+  margin-top: 2em;
+
+  :global * {
+    z-index: 3;
+  }
+
+  :global div.contact-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: calc(80vh - 32px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (orientation: portrait) {
+      width: calc(100vw - 32px);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 80%;
+
+      input,
+      textarea {
+        width: 100%;
+
+        margin: 4px;
+        border: 0;
+        padding: 4px 8px;
+      }
+
+      button {
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+
+        background: #968602;
+        color: white;
+
+        border-radius: 32px;
+
+        padding: 4px 32px;
+        margin-top: 32px;
+      }
+
+      p {
+        margin-top: 32px;
+      }
+    }
+  }
+}
+
+.address {
+  margin: 4rem 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  :global * {
+    z-index: 3;
+  }
+
+  :global img {
+    width: 8rem;
+  }
+
+  :global p {
+    margin: 0;
+  }
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+
+  max-width: 20rem;
+
+  margin: auto;
+
+  :global * {
+    z-index: 3;
+  }
+
+  :global div.container {
+    height: 8rem;
+    width: 8rem;
+
+    margin: 24px;
+  }
+
+  :global div:last-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    justify-self: center;
+  }
+}
+
+.bubbles {
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
+}

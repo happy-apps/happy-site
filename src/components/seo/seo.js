@@ -19,6 +19,9 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
+            image
+            twitterUsername
           }
         }
       }
@@ -26,14 +29,15 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaTitle = title ? title : site.siteMetadata.title
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={metaTitle}
+      titleTemplate={title ? `%s | ${site.siteMetadata.title}` : `%s`}
       meta={[
         {
           name: `description`,
@@ -41,7 +45,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
@@ -50,6 +54,14 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.url,
+        },
+        {
+          property: `og:image`,
+          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
         },
         {
           name: `twitter:card`,
@@ -61,11 +73,19 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.twitterUsername,
         },
       ].concat(meta)}
     />
@@ -82,7 +102,6 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

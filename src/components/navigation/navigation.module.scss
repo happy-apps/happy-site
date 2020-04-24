@@ -1,0 +1,62 @@
+nav.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 4;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  padding: 32px 16px 32px 32px;
+
+  img,
+  button {
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.25s ease-in;
+  }
+
+  &.animate,
+  &.instant {
+    img,
+    button,
+    button span {
+      opacity: 1;
+      visibility: inherit;
+
+      transition: opacity 0.25s ease-in;
+    }
+
+    &.fix {
+      img,
+      button span {
+        opacity: 0;
+      }
+    }
+  }
+
+  img {
+    margin: 0;
+    height: 2em;
+  }
+
+  button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      padding: 0 8px;
+    }
+  }
+}

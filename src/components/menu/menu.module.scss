@@ -1,0 +1,68 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1031;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.35s;
+
+  cursor: pointer;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  a {
+    pointer-events: all;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+
+    h1 {
+      background-size: 100% 200%;
+      background-position: 0 0;
+    }
+  }
+}
+
+.home {
+  background-image: linear-gradient(
+    transparent,
+    transparent calc(50% - 9px),
+    #75f064 calc(50% - 9px),
+    #75f064
+  );
+}
+
+.portfolio {
+  background-image: linear-gradient(
+    transparent,
+    transparent calc(50% - 9px),
+    #80d3ff calc(50% - 9px),
+    #80d3ff
+  );
+}
+
+.about {
+  background-image: linear-gradient(
+    transparent,
+    transparent calc(50% - 9px),
+    #ff80b1 calc(50% - 9px),
+    #ff80b1
+  );
+}

@@ -1,0 +1,129 @@
+.smiley {
+  img,
+  > div {
+    z-index: 2;
+  }
+
+  img {
+    position: absolute;
+
+    height: 60vh;
+
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  > div {
+    display: block;
+    background: #ffe600;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    width: 80vh;
+    height: 80vh;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  > h1 {
+    position: absolute;
+
+    max-width: 70vh;
+
+    left: 50%;
+    top: calc(50% - 32px);
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    visibility: hidden;
+    opacity: 0;
+
+    :global {
+      transition: opacity 0.25s 0.8s ease-in;
+    }
+  }
+
+  &.animate {
+    img {
+      animation: moveHappy 0.8s infinite forwards ease-out;
+      animation-iteration-count: 1;
+    }
+
+    div {
+      animation: moveSmiley 0.4s infinite forwards ease-in-out;
+      animation-iteration-count: 1;
+    }
+
+    > h1 {
+      opacity: 1;
+      visibility: inherit;
+    }
+  }
+
+  @media (orientation: portrait) {
+    img {
+      top: 60%;
+
+      max-height: 60vw;
+    }
+
+    > div {
+      width: 80vw;
+      height: 80vw;
+    }
+
+    > h1 {
+      font-size: 10vw;
+      width: 90vw;
+    }
+  }
+}
+
+@keyframes moveHappy {
+  60% {
+    top: 60%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+
+  100% {
+    top: 60%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes moveSmiley {
+  100% {
+    height: 110vh;
+    width: 110vh;
+
+    top: 60%;
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes moveHappy {
+    60% {
+      top: 56%;
+      transform: translate(-50%, -50%) rotate(-4deg);
+    }
+
+    100% {
+      top: 56%;
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+
+  @keyframes moveSmiley {
+    100% {
+      height: 110vw;
+      width: 110vw;
+      top: 50%;
+    }
+  }
+}

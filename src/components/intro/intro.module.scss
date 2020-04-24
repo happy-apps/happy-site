@@ -1,0 +1,32 @@
+.weCreate {
+  position: relative;
+
+  display: block;
+
+  height: 80vh;
+  margin: 34vh 0 40px;
+
+  @media (orientation: portrait) {
+    height: 120vw;
+    margin: 10vh 0 40px;
+  }
+
+  h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.values {
+  position: relative;
+  display: block;
+  height: 100%;
+
+  .bubbles {
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+}

@@ -1,25 +1,39 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "happy-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Apps that makes people happy",
+  "version": "0.0.1",
+  "author": "David Dal Busco <david@fluster.io>",
   "dependencies": {
+    "@formatjs/intl-pluralrules": "^1.5.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
+    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sass": "^2.1.31",
     "gatsby-plugin-sharp": "^2.4.13",
+    "gatsby-plugin-sitemap": "^2.2.30",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-intl": "^4.1.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
   },
   "keywords": [
     "gatsby"
@@ -36,9 +50,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/peterpeterparker/happy-site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/peterpeterparker/happy-site/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }

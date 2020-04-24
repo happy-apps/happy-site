@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  height: 34rem;
+
+  overflow: hidden;
+
+  &.about {
+    height: 12rem;
+  }
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  top: 4rem;
+  transform: translate(-50%, 0);
+
+  span {
+    margin-right: 4px;
+  }
+}
+
+.bike {
+  width: 240px;
+
+  position: absolute;
+  left: 50%;
+  bottom: 8rem;
+  transform: translate(-50%, 0);
+}
+
+.jump {
+  width: 360px;
+
+  position: absolute;
+  left: 40%;
+  bottom: 4rem;
+  transform: translate(-50%, 0);
+}
+
+.customFuture {
+  position: absolute;
+  left: 50%;
+  top: 3rem;
+  transform: translate(-50%, 0);
+
+  width: 10rem;
+}
