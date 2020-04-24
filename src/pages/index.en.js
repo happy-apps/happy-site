@@ -6,23 +6,6 @@ import Header from "../components/header/header"
 
 import Intro from "../components/intro/intro"
 
-import { library, config } from "@fortawesome/fontawesome-svg-core"
-
-import { faPlus } from "@fortawesome/free-solid-svg-icons"
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons"
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons"
-
-// https://github.com/FortAwesome/react-fontawesome/issues/134#issuecomment-471940596
-import "@fortawesome/fontawesome-svg-core/styles.css"
-
-config.autoAddCss = false
-
-library.add(faPlus)
-library.add(faAngleDown)
-library.add(faArrowRight)
-library.add(faArrowDown)
-
 const IndexPage = props => (
   <Layout location={props.location} delayNavigation={true} pageName={"home"}>
     <SEO />
