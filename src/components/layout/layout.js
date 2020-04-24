@@ -14,7 +14,13 @@ import { getCurrentLangKey } from "ptz-i18n"
 import Navigation from "../navigation/navigation"
 import Footer from "../footer/footer"
 
-const Layout = ({ children, location, messages, delayNavigation }) => {
+const Layout = ({
+  children,
+  location,
+  messages,
+  delayNavigation,
+  pageName,
+}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -42,7 +48,7 @@ const Layout = ({ children, location, messages, delayNavigation }) => {
 
       <main>{children}</main>
 
-      <Footer langKey={langKey} />
+      <Footer langKey={langKey} pageName={pageName} />
     </IntlProvider>
   )
 }
@@ -52,6 +58,7 @@ Layout.propTypes = {
   location: PropTypes.any.isRequired,
   messages: PropTypes.any.isRequired,
   delayNavigation: PropTypes.bool.isRequired,
+  pageName: PropTypes.any.isRequired,
 }
 
 export default Layout

@@ -24,7 +24,7 @@ library.add(faArrowRight)
 library.add(faArrowDown)
 
 const IndexPage = props => (
-  <Layout location={props.location} delayNavigation={true}>
+  <Layout location={props.location} delayNavigation={true} pageName={"home"}>
     <SEO />
     <Header />
 

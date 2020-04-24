@@ -13,24 +13,47 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className={styles.footer}>
-        <div>
-          <Img fluid={this.props.data.happyBikeImage.childImageSharp.fluid} />
-        </div>
+        {this.props.pageName === "home" ? (
+          <div className={styles.bike}>
+            <Img fluid={this.props.data.happyBikeImage.childImageSharp.fluid} />
+          </div>
+        ) : (
+          undefined
+        )}
+
+        {this.props.pageName === "portfolio" ? (
+          <div className={styles.jump}>
+            <Img fluid={this.props.data.happyJumpImage.childImageSharp.fluid} />
+          </div>
+        ) : (
+          undefined
+        )}
 
         <Bubble
           animate={false}
           customStyle={{
             "--size": "44rem",
-            "--background": "#75F064",
+            "--background":
+              this.props.pageName === "portfolio" ? "#80D3FF" : "#75F064",
             "--bottom": "-58rem",
             "--left": "50%",
           }}
         >
-          <Link to={`/${this.props.langKey}/appetizers`}>
+          <Link
+            to={
+              this.props.pageName === "portfolio"
+                ? `/${this.props.langKey}/about`
+                : `/${this.props.langKey}/portfolio`
+            }
+          >
             <div className={styles.link}>
               <span>
                 <FormattedMessage
-                  id="check.out.appetizers"
+                  id={
+                    this.props.pageName === "portfolio"
+                      ? "menu.item.we.are.happy"
+                      : "check.out.appetizers"
+                  }
                   values={{
                     strong: (...chunks) => <strong>{chunks}</strong>,
                   }}
@@ -45,7 +68,7 @@ class Footer extends React.Component {
   }
 }
 
-export default ({ langKey }) => (
+export default ({ langKey, pageName }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -56,8 +79,17 @@ export default ({ langKey }) => (
             }
           }
         }
+        happyJumpImage: file(relativePath: { eq: "happy-jump.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 240) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
-    render={data => <Footer data={data} langKey={langKey} />}
+    render={data => (
+      <Footer data={data} langKey={langKey} pageName={pageName} />
+    )}
   />
 )

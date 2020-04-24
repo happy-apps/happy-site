@@ -7,12 +7,16 @@ import Appetizers from "../components/appetizers/appetizers"
 
 import messages from "../i18n/en"
 
-const SecondPage = props => (
-  <Layout location={props.location} delayNavigation={false}>
+const PortfolioPage = props => (
+  <Layout
+    location={props.location}
+    delayNavigation={false}
+    pageName={"portfolio"}
+  >
     <SEO />
 
     <Appetizers messages={messages} />
   </Layout>
 )
 
-export default SecondPage
+export default PortfolioPage
