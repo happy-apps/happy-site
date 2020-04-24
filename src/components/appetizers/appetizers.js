@@ -92,6 +92,66 @@ class Appetizers extends React.Component {
               />
             </h2>
           </div>
+
+          <Img
+            className="postits"
+            fluid={this.props.data.postitsImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.postits"]}
+          />
+
+          <div className="ipad">
+            <Img
+              fluid={this.props.data.ipadImg.childImageSharp.fluid}
+              alt={this.props.messages["portfolio.img.ipad"]}
+            />
+          </div>
+
+          <Img
+            className="paper"
+            fluid={this.props.data.paperImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.paper"]}
+          />
+
+          <div className="working">
+            <Img
+              fluid={this.props.data.workingImg.childImageSharp.fluid}
+              alt={this.props.messages["portfolio.img.working"]}
+            />
+          </div>
+
+          <Img
+            className="books"
+            fluid={this.props.data.booksImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.books"]}
+          />
+
+          <Img
+            className="wireframe"
+            fluid={this.props.data.wireframeImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.wireframe"]}
+          />
+
+          <Img
+            className="tester"
+            fluid={this.props.data.testerImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.tester"]}
+          />
+
+          <h2 className="interactions">
+            <FormattedMessage
+              id="portfolio.happy.interactions"
+              values={{
+                strong: (...chunks) => <strong>{chunks}</strong>,
+              }}
+            />
+          </h2>
+
+          <div className="ipad2">
+            <Img
+              fluid={this.props.data.ipad2Img.childImageSharp.fluid}
+              alt={this.props.messages["portfolio.img.ipad2"]}
+            />
+          </div>
         </section>
       </>
     )
@@ -151,6 +211,62 @@ export default ({ messages }) => (
         ukuleleImg: file(relativePath: { eq: "portfolio/ukulele.png" }) {
           childImageSharp {
             fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        ipadImg: file(relativePath: { eq: "portfolio/ipad.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        postitsImg: file(relativePath: { eq: "portfolio/postits.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        paperImg: file(relativePath: { eq: "portfolio/paper.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        booksImg: file(relativePath: { eq: "portfolio/books.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        workingImg: file(relativePath: { eq: "portfolio/working.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        wireframeImg: file(relativePath: { eq: "portfolio/wireframe.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        testerImg: file(relativePath: { eq: "portfolio/tester.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        ipad2Img: file(relativePath: { eq: "portfolio/ipad2.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }

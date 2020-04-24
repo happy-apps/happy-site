@@ -96,4 +96,59 @@
     grid-row-start: 4;
     grid-row-end: 6;
   }
+
+  :global .ipad {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+
+    margin-left: 2em;
+  }
+
+  :global .postits {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 8;
+
+    margin: 8em 2em 0 0;
+  }
+
+  :global .paper,
+  :global .books {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  :global .paper {
+    margin-top: 4em;
+  }
+
+  :global .books {
+    margin-left: 4em;
+  }
+
+  :global .working {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    margin-top: 8em;
+  }
+
+  :global .interactions {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    justify-self: center;
+    align-self: center;
+  }
+
+  :global .ipad2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 11;
+    grid-row-end: 13;
+
+    margin: 2em 8em;
+  }
 }

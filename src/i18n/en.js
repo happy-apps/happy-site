@@ -35,4 +35,13 @@ module.exports = {
   "portfolio.img.interface": "Interface",
   "portfolio.happy.apps": "<strong>happy</strong> apps",
   "portfolio.img.ukulele": "Ukulele",
+  "portfolio.img.ipad": "iPad",
+  "portfolio.img.postits": "Postits",
+  "portfolio.img.books": "Books",
+  "portfolio.img.paper": "Paper",
+  "portfolio.img.working": "Working",
+  "portfolio.happy.interactions": "<strong>happy</strong> interactions",
+  "portfolio.img.tester": "Tester",
+  "portfolio.img.wireframe": "Wireframe",
+  "portfolio.img.ipad2": "iPad",
 }
