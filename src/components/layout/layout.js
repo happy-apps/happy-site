@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import "../../theme/theme.scss"
 import "../../theme/fonts.scss"
+import "../../theme/main.scss"
 
 import { IntlProvider } from "react-intl"
 import "@formatjs/intl-pluralrules/polyfill"

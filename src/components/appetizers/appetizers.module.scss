@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10rem 0 5rem;
+
+  h1 {
+    display: inline-block;
+
+    background-size: 100% 200%;
+    background-position: 0 0;
+    background-image: linear-gradient(
+      transparent,
+      transparent calc(50% - 9px),
+      #80d3ff calc(50% - 9px),
+      #80d3ff
+    );
+  }
+
+  p {
+    padding-top: 1rem;
+  }
+}
+
+.portfolio {
+  display: grid;
+
+  grid-template-columns: auto;
+
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+
+  :global .interaction {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    margin: 2em 2em 2em 0;
+  }
+
+  :global .wall,
+  :global .prototyping {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  :global .prototyping {
+    margin-right: 2em;
+  }
+}

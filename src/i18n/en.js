@@ -25,4 +25,8 @@ module.exports = {
   "refuse.content":
     "We reject projects that do not have a positive social or environmental impact. We code for a better future. We ride trains and bicycles to visit our clients.",
   "check.out.appetizers": "check out our <strong>app</strong>etizers",
+  "portfolio.what.we.do": "Impressions of what we do:",
+  "portfolio.img.interaction": "Interaction",
+  "portfolio.img.wall": "Wall",
+  "portfolio.img.prototyping": "Prototyping",
 }

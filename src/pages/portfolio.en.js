@@ -1,15 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout/en"
 import SEO from "../components/seo/seo"
 
+import Appetizers from "../components/appetizers/appetizers"
+
+import messages from "../i18n/en"
+
 const SecondPage = props => (
   <Layout location={props.location} delayNavigation={false}>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/en/">Go back to the homepage</Link>
+    <SEO />
+
+    <Appetizers messages={messages} />
   </Layout>
 )
 
