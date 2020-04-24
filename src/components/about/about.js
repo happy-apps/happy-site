@@ -188,6 +188,38 @@ class About extends React.Component {
 
           <p>Switzerland</p>
         </section>
+
+        <div className={styles.bubbles}>
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "40rem",
+              "--top": "20%",
+              "--left": "0",
+              "--background": "#75F064",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "44rem",
+              "--top": "40%",
+              "--right": "-70%",
+              "--background": "#7CD3FF",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "24rem",
+              "--top": "88%",
+              "--left": "8%",
+              "--background": "#FF80B1",
+            }}
+          ></Bubble>
+        </div>
       </>
     )
   }

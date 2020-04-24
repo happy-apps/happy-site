@@ -42,6 +42,10 @@
   height: 110vh;
   margin-top: 2em;
 
+  :global * {
+    z-index: 3;
+  }
+
   :global div.contact-form {
     position: absolute;
     left: 50%;
@@ -105,6 +109,10 @@
   align-items: center;
   justify-content: center;
 
+  :global * {
+    z-index: 3;
+  }
+
   :global img {
     width: 8rem;
   }
@@ -123,6 +131,10 @@
 
   margin: auto;
 
+  :global * {
+    z-index: 3;
+  }
+
   :global div.container {
     height: 8rem;
     width: 8rem;
@@ -135,5 +147,11 @@
     grid-column-end: 3;
 
     justify-self: center;
+  }
+}
+
+.bubbles {
+  @media only screen and (max-width: 1200px) {
+    display: none;
   }
 }
