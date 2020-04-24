@@ -2,6 +2,9 @@ module.exports = {
   "intro.happy": "apps that make people <strong>happy.</strong>",
   "intro.come.inside": "come inside!",
   "menu.explore": "explore",
+  "menu.item.we.create": "we <strong>create</strong>",
+  "menu.item.appetizers": "<strong>app</strong>etizers",
+  "menu.item.we.are.happy": "we are <strong>happy</strong>",
   "we.create":
     "we <strong>create</strong> software with a positive social & environmental impact.",
   "5.rs":

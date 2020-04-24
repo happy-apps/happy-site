@@ -3,6 +3,7 @@ import React, { useImperativeHandle, useRef } from "react"
 import { Link } from "gatsby"
 
 import styles from "./menu.module.scss"
+import { FormattedMessage } from "react-intl"
 
 class Menu extends React.Component {
   constructor(props) {
@@ -23,10 +24,34 @@ class Menu extends React.Component {
         ref={this.props.innerRef}
       >
         <Link to={`/${this.props.langKey}`}>
-          <h1>Home</h1>
+          <h1 className={styles.home}>
+            <FormattedMessage
+              id="menu.item.we.create"
+              values={{
+                strong: (...chunks) => <strong>{chunks}</strong>,
+              }}
+            />
+          </h1>
         </Link>
-        <Link to={`/${this.props.langKey}/appetizers`}>
-          <h1>Appetizers</h1>
+        <Link to={`/${this.props.langKey}/portfolio`}>
+          <h1 className={styles.portfolio}>
+            <FormattedMessage
+              id="menu.item.appetizers"
+              values={{
+                strong: (...chunks) => <strong>{chunks}</strong>,
+              }}
+            />
+          </h1>
+        </Link>
+        <Link to={`/${this.props.langKey}/about`}>
+          <h1 className={styles.about}>
+            <FormattedMessage
+              id="menu.item.we.are.happy"
+              values={{
+                strong: (...chunks) => <strong>{chunks}</strong>,
+              }}
+            />
+          </h1>
         </Link>
       </div>
     )

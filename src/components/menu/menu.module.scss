@@ -32,5 +32,37 @@
     &:active {
       text-decoration: none;
     }
+
+    h1 {
+      background-size: 100% 200%;
+      background-position: 0 0;
+    }
   }
+}
+
+.home {
+  background-image: linear-gradient(
+    transparent,
+    transparent calc(50% - 9px),
+    #75f064 calc(50% - 9px),
+    #75f064
+  );
+}
+
+.portfolio {
+  background-image: linear-gradient(
+    transparent,
+    transparent calc(50% - 9px),
+    #80d3ff calc(50% - 9px),
+    #80d3ff
+  );
+}
+
+.about {
+  background-image: linear-gradient(
+    transparent,
+    transparent calc(50% - 9px),
+    #ff80b1 calc(50% - 9px),
+    #ff80b1
+  );
 }
