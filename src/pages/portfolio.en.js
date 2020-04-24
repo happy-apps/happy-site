@@ -7,16 +7,20 @@ import Appetizers from "../components/appetizers/appetizers"
 
 import messages from "../i18n/en"
 
-const PortfolioPage = props => (
-  <Layout
-    location={props.location}
-    delayNavigation={false}
-    pageName={"portfolio"}
-  >
-    <SEO />
+import styles from "./portfolio.module.scss"
 
-    <Appetizers messages={messages} />
-  </Layout>
+const PortfolioPage = props => (
+  <div className={styles.content}>
+    <Layout
+      location={props.location}
+      delayNavigation={false}
+      pageName={"portfolio"}
+    >
+      <SEO />
+
+      <Appetizers messages={messages} />
+    </Layout>
+  </div>
 )
 
 export default PortfolioPage

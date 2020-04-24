@@ -196,7 +196,7 @@ class Appetizers extends React.Component {
             animate={false}
             customStyle={{
               "--size": "20rem",
-              "--top": "40%",
+              "--top": "6%",
               "--left": "0",
               "--background": "#80D3FF",
             }}
@@ -207,7 +207,7 @@ class Appetizers extends React.Component {
             customStyle={{
               "--size": "40rem",
               "--small-size": "24rem",
-              "--top": "80%",
+              "--top": "12%",
               "--right": "-60%",
               "--background": "#FFE200",
             }}
@@ -218,7 +218,7 @@ class Appetizers extends React.Component {
             customStyle={{
               "--size": "52rem",
               "--small-size": "36rem",
-              "--top": "160%",
+              "--top": "20%",
               "--left": "10%",
               "--background": "#75F064",
             }}
@@ -229,7 +229,7 @@ class Appetizers extends React.Component {
             customStyle={{
               "--size": "58rem",
               "--small-size": "38rem",
-              "--top": "280%",
+              "--top": "38%",
               "--right": "-80%",
               "--background": "#FF80B1",
             }}
@@ -239,7 +239,7 @@ class Appetizers extends React.Component {
             animate={false}
             customStyle={{
               "--size": "30rem",
-              "--top": "400%",
+              "--top": "50%",
               "--left": "8%",
               "--background": "#80D3FF",
             }}
@@ -249,7 +249,7 @@ class Appetizers extends React.Component {
             animate={false}
             customStyle={{
               "--size": "40rem",
-              "--top": "580%",
+              "--top": "72%",
               "--left": "-4%",
               "--background": "#FFE200",
             }}
@@ -260,31 +260,9 @@ class Appetizers extends React.Component {
             customStyle={{
               "--size": "52rem",
               "--small-size": "28rem",
-              "--top": "690%",
-              "--right": "-60%",
+              "--top": "86%",
+              "--right": "-80%",
               "--background": "#75F064",
-            }}
-          ></Bubble>
-
-          <Bubble
-            animate={false}
-            customStyle={{
-              "--size": "58rem",
-              "--small-size": "38rem",
-              "--top": "820%",
-              "--left": "8%",
-              "--background": "#FF80B1",
-            }}
-          ></Bubble>
-
-          <Bubble
-            animate={false}
-            customStyle={{
-              "--size": "52rem",
-              "--small-size": "22rem",
-              "--top": "880%",
-              "--right": "-40%",
-              "--background": "#FFE200",
             }}
           ></Bubble>
         </div>
