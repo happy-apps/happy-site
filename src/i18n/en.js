@@ -44,4 +44,9 @@ module.exports = {
   "portfolio.img.tester": "Tester",
   "portfolio.img.wireframe": "Wireframe",
   "portfolio.img.ipad2": "iPad",
+  "portfolio.img.chat": "Chat",
+  "portfolio.img.helmet": "Helmet",
+  "portfolio.img.working2": "Working",
+  "portfolio.happy.software": "<strong>happy</strong> software",
+  "portfolio.img.cat": "Cat",
 }

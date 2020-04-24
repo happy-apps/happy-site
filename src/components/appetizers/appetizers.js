@@ -152,6 +152,40 @@ class Appetizers extends React.Component {
               alt={this.props.messages["portfolio.img.ipad2"]}
             />
           </div>
+
+          <Img
+            className="helmet"
+            fluid={this.props.data.helmetImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.helmet"]}
+          />
+
+          <Img
+            className="chat"
+            fluid={this.props.data.chatImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.chat"]}
+          />
+
+          <div className="working2">
+            <Img
+              fluid={this.props.data.working2Img.childImageSharp.fluid}
+              alt={this.props.messages["portfolio.img.working2"]}
+            />
+          </div>
+
+          <Img
+            className="cat"
+            fluid={this.props.data.catImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.cat"]}
+          />
+
+          <h2 className="software">
+            <FormattedMessage
+              id="portfolio.happy.software"
+              values={{
+                strong: (...chunks) => <strong>{chunks}</strong>,
+              }}
+            />
+          </h2>
         </section>
       </>
     )
@@ -267,6 +301,34 @@ export default ({ messages }) => (
         ipad2Img: file(relativePath: { eq: "portfolio/ipad2.png" }) {
           childImageSharp {
             fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        chatImg: file(relativePath: { eq: "portfolio/chat.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        helmetImg: file(relativePath: { eq: "portfolio/helmet.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        working2Img: file(relativePath: { eq: "portfolio/working2.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        catImg: file(relativePath: { eq: "portfolio/cat.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
               ...GatsbyImageSharpFluid
             }
           }
