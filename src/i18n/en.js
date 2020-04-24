@@ -29,4 +29,10 @@ module.exports = {
   "portfolio.img.interaction": "Interaction",
   "portfolio.img.wall": "Wall",
   "portfolio.img.prototyping": "Prototyping",
+  "portfolio.img.iphone": "iPhone",
+  "portfolio.happy.prototypes": "<strong>happy</strong> prototypes",
+  "portfolio.img.laugh": "Laugh",
+  "portfolio.img.interface": "Interface",
+  "portfolio.happy.apps": "<strong>happy</strong> apps",
+  "portfolio.img.ukulele": "Ukulele",
 }

@@ -47,6 +47,51 @@ class Appetizers extends React.Component {
             fluid={this.props.data.prototypingImg.childImageSharp.fluid}
             alt={this.props.messages["portfolio.img.prototyping"]}
           />
+
+          <div className="iphone">
+            <Img
+              fluid={this.props.data.iphoneImg.childImageSharp.fluid}
+              alt={this.props.messages["portfolio.img.iphone"]}
+            />
+          </div>
+
+          <div className="prototypes">
+            <h2>
+              <FormattedMessage
+                id="portfolio.happy.prototypes"
+                values={{
+                  strong: (...chunks) => <strong>{chunks}</strong>,
+                }}
+              />
+            </h2>
+
+            <Img
+              fluid={this.props.data.laughImg.childImageSharp.fluid}
+              alt={this.props.messages["portfolio.img.laugh"]}
+            />
+          </div>
+
+          <Img
+            className="interface"
+            fluid={this.props.data.interfaceImg.childImageSharp.fluid}
+            alt={this.props.messages["portfolio.img.interface"]}
+          />
+
+          <div className="apps">
+            <Img
+              fluid={this.props.data.ukuleleImg.childImageSharp.fluid}
+              alt={this.props.messages["portfolio.img.ukulele"]}
+            />
+
+            <h2>
+              <FormattedMessage
+                id="portfolio.happy.apps"
+                values={{
+                  strong: (...chunks) => <strong>{chunks}</strong>,
+                }}
+              />
+            </h2>
+          </div>
         </section>
       </>
     )
@@ -76,6 +121,34 @@ export default ({ messages }) => (
         prototypingImg: file(
           relativePath: { eq: "portfolio/prototyping.png" }
         ) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        iphoneImg: file(relativePath: { eq: "portfolio/iphone.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        laughImg: file(relativePath: { eq: "portfolio/laugh.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        interfaceImg: file(relativePath: { eq: "portfolio/interface.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        ukuleleImg: file(relativePath: { eq: "portfolio/ukulele.png" }) {
           childImageSharp {
             fluid(maxWidth: 768) {
               ...GatsbyImageSharpFluid
