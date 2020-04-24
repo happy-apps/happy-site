@@ -8,6 +8,10 @@
   height: 34rem;
 
   overflow: hidden;
+
+  &.about {
+    height: 12rem;
+  }
 }
 
 .link {
@@ -41,4 +45,13 @@
   left: 40%;
   bottom: 4rem;
   transform: translate(-50%, 0);
+}
+
+.customFuture {
+  position: absolute;
+  left: 50%;
+  top: 3rem;
+  transform: translate(-50%, 0);
+
+  width: 10rem;
 }
