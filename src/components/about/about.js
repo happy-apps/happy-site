@@ -7,6 +7,8 @@ import { graphql, StaticQuery } from "gatsby"
 import { FormattedMessage } from "react-intl"
 import Bubble from "../bubble/bubble"
 
+import Img from "gatsby-image"
+
 class About extends React.Component {
   constructor(props) {
     super(props)
@@ -75,6 +77,32 @@ class About extends React.Component {
               }}
             />
           </p>
+        </section>
+
+        <section className={styles.team}>
+          <div className="container">
+            <Img
+              fluid={this.props.data.samImg.childImageSharp.fluid}
+              alt="Sam"
+            />
+            <p>Sam</p>
+          </div>
+
+          <div className="container">
+            <Img
+              fluid={this.props.data.davidImg.childImageSharp.fluid}
+              alt="David"
+            />
+            <p>David</p>
+          </div>
+
+          <div className="container">
+            <Img
+              fluid={this.props.data.didiImg.childImageSharp.fluid}
+              alt="Didi"
+            />
+            <p>Didi</p>
+          </div>
         </section>
 
         <section className={styles.contact}>
@@ -146,6 +174,20 @@ class About extends React.Component {
             </div>
           </Bubble>
         </section>
+
+        <section className={styles.address}>
+          <img
+            src={"/images/happy-logo.svg"}
+            role="presentation"
+            alt="Happy Logo"
+          />
+
+          <p>c/o Impact Hub</p>
+
+          <p>Sihlquai 131, 8005 Zurich</p>
+
+          <p>Switzerland</p>
+        </section>
       </>
     )
   }
@@ -155,9 +197,21 @@ export default ({ messages }) => (
   <StaticQuery
     query={graphql`
       query {
-        interactionImg: file(
-          relativePath: { eq: "portfolio/interaction.png" }
-        ) {
+        davidImg: file(relativePath: { eq: "team/david.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        didiImg: file(relativePath: { eq: "team/didi.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        samImg: file(relativePath: { eq: "team/sam.png" }) {
           childImageSharp {
             fluid(maxWidth: 768) {
               ...GatsbyImageSharpFluid
