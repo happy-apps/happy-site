@@ -6,7 +6,10 @@ import { FormattedMessage } from "react-intl"
 
 import Img from "gatsby-image"
 import { graphql, StaticQuery } from "gatsby"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import Bubble from "../bubble/bubble"
 
 class Appetizers extends React.Component {
   render() {
@@ -187,6 +190,104 @@ class Appetizers extends React.Component {
             />
           </h2>
         </section>
+
+        <div className={styles.bubbles}>
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "20rem",
+              "--top": "40%",
+              "--left": "0",
+              "--background": "#80D3FF",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "40rem",
+              "--small-size": "24rem",
+              "--top": "80%",
+              "--right": "-60%",
+              "--background": "#FFE200",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "52rem",
+              "--small-size": "36rem",
+              "--top": "160%",
+              "--left": "10%",
+              "--background": "#75F064",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "58rem",
+              "--small-size": "38rem",
+              "--top": "280%",
+              "--right": "-80%",
+              "--background": "#FF80B1",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "30rem",
+              "--top": "400%",
+              "--left": "8%",
+              "--background": "#80D3FF",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "40rem",
+              "--top": "580%",
+              "--left": "-4%",
+              "--background": "#FFE200",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "52rem",
+              "--small-size": "28rem",
+              "--top": "690%",
+              "--right": "-60%",
+              "--background": "#75F064",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "58rem",
+              "--small-size": "38rem",
+              "--top": "820%",
+              "--left": "8%",
+              "--background": "#FF80B1",
+            }}
+          ></Bubble>
+
+          <Bubble
+            animate={false}
+            customStyle={{
+              "--size": "52rem",
+              "--small-size": "22rem",
+              "--top": "880%",
+              "--right": "-40%",
+              "--background": "#FFE200",
+            }}
+          ></Bubble>
+        </div>
       </>
     )
   }

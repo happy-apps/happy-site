@@ -6,6 +6,10 @@
 
   margin: 10rem 0 5rem;
 
+  :global * {
+    z-index: 3;
+  }
+
   h1 {
     display: inline-block;
 
@@ -31,6 +35,10 @@
 
   grid-column-gap: 2em;
   grid-row-gap: 2em;
+
+  :global * {
+    z-index: 3;
+  }
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 50%);
@@ -302,4 +310,12 @@
       margin: 2em 0 2em 4em;
     }
   }
+}
+
+.bubbles {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
 }

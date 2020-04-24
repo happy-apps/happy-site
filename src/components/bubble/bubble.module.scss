@@ -33,6 +33,11 @@
     bottom: var(--bottom-mobile, var(--bottom));
     right: var(--right-mobile, var(--right));
   }
+
+  @media (max-width: 992px) {
+    width: var(--small-size, var(--size));
+    height: var(--small-size, var(--size));
+  }
 }
 
 @keyframes moveBubble {
