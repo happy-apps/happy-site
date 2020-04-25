@@ -41,7 +41,7 @@ class Intro extends React.Component {
                 "--size": "60rem",
                 "--background": "#FFE200",
                 "--top": "16rem",
-                "--left": "-16%",
+                "--left": "-35%",
               }}
             ></Bubble>
 
@@ -51,7 +51,7 @@ class Intro extends React.Component {
                 "--size": "60rem",
                 "--background": "#FF80B1",
                 "--top": "36rem",
-                "--right": "-74rem",
+                "--right": "-140%",
               }}
             ></Bubble>
 
@@ -61,7 +61,7 @@ class Intro extends React.Component {
                 "--size": "32rem",
                 "--background": "#80D3FF",
                 "--bottom": "-25rem",
-                "--left": "4rem",
+                "--left": "-25%",
               }}
             ></Bubble>
           </div>
