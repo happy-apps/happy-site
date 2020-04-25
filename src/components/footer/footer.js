@@ -88,11 +88,13 @@ class Footer extends React.Component {
     }
 
     return (
-      <img
-        className={styles.customFuture}
-        src={"/images/customfuture.svg"}
-        alt="customfuture"
-      />
+      <div className={styles.customFuture}>
+        <p>
+          <FormattedMessage id="footer.customfuture" />
+        </p>
+
+        <img src={"/images/customfuture.svg"} alt="customfuture" />
+      </div>
     )
   }
 }
