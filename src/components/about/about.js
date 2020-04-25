@@ -110,7 +110,6 @@ class About extends React.Component {
             animate={false}
             customStyle={{
               "--size": "40rem",
-              "--size-mobile": "120vw",
               "--background": "#FFE633",
               "--top": "50%",
               "--left": "50%",
