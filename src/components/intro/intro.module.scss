@@ -3,12 +3,11 @@
 
   display: block;
 
-  height: 80vh;
-  margin: 34vh 0 40px;
+  height: 34rem;
+  margin: 12em 0 4em;
 
   @media (orientation: portrait) {
-    height: 120vw;
-    margin: 10vh 0 40px;
+    margin: 4em 0;
   }
 
   h1 {
