@@ -65,4 +65,6 @@ module.exports = {
   "about.contact.your.message": "Your message",
   "about.contact.thanks": "Thanks!",
   "about.contact.oops": "Ooops! There was an error.",
+  "footer.customfuture":
+    "We are an independent republic of customfuture SA - a global innovation and design firm.",
 }
