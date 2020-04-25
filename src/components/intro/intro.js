@@ -16,7 +16,6 @@ class Intro extends React.Component {
             animate={false}
             customStyle={{
               "--size": "34rem",
-              "--size-mobile": "120vw",
               "--background": "#75F064",
               "--top": "50%",
               "--left": "50%",
