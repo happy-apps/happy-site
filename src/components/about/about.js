@@ -103,6 +103,22 @@ class About extends React.Component {
             />
             <p>Didi</p>
           </div>
+
+          <div className="container">
+            <Img
+              fluid={this.props.data.irisImg.childImageSharp.fluid}
+              alt="Iris"
+            />
+            <p>Iris</p>
+          </div>
+
+          <div className="container">
+            <Img
+              fluid={this.props.data.happyImg.childImageSharp.fluid}
+              alt="Happy"
+            />
+            <p>Happy</p>
+          </div>
         </section>
 
         <section className={styles.contact}>
@@ -243,6 +259,20 @@ export default ({ messages }) => (
           }
         }
         samImg: file(relativePath: { eq: "team/sam.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        irisImg: file(relativePath: { eq: "team/iris.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        happyImg: file(relativePath: { eq: "team/happy.png" }) {
           childImageSharp {
             fluid(maxWidth: 768) {
               ...GatsbyImageSharpFluid
