@@ -65,6 +65,10 @@ class About extends React.Component {
             <FormattedMessage id="about.we.create" />
           </p>
 
+          <p>
+            <FormattedMessage id="about.social.code" />
+          </p>
+
           <p className={styles.pink}>
             <FormattedMessage id="about.we.love" />
           </p>
@@ -76,6 +80,10 @@ class About extends React.Component {
                 strong: (...chunks) => <strong>{chunks}</strong>,
               }}
             />
+          </p>
+
+          <p>
+            <FormattedMessage id="about.peace" />
           </p>
         </section>
 
@@ -186,6 +194,10 @@ class About extends React.Component {
                   </p>
                 )}
               </form>
+
+              <p>
+                <FormattedMessage id="about.contact.language" />
+              </p>
             </div>
           </Bubble>
         </section>

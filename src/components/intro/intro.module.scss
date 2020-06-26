@@ -29,3 +29,19 @@
     }
   }
 }
+
+.weMake {
+  max-width: 20rem;
+  margin: auto;
+
+  p:first-of-type {
+    margin: 4em 0 0;
+    max-width: 20rem;
+  }
+
+  p:last-of-type {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    margin: 2em 0 0;
+  }
+}

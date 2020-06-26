@@ -14,7 +14,7 @@ module.exports = {
     "We make Apps with the Web. The same code works on Android, iOS and anywhere else with Progressive Web Apps. 3 times faster and lower in price.",
   "recycle.title": "Recycle",
   "recycle.content":
-    " Whenever we found one of our component that does the job, we recycle it rather than program it from scratch.",
+    " Whenever we find one of our components that does the job, we recycle it rather than program it from scratch.",
   "reduce.title": "Reduce",
   "reduce.content":
     "We use serverless technology so you don't need a server. We host your code in clouds that use renewable energy.",
@@ -24,6 +24,10 @@ module.exports = {
   "refuse.title": "Refuse",
   "refuse.content":
     "We reject projects that do not have a positive social or environmental impact. We code for a better future. We ride trains and bicycles to visit our clients.",
+  "we.make":
+    "We make happy <strong>apps</strong>, happy <strong>software</strong> & happy <strong>websites</strong>.",
+  "no.cookie":
+    "We regret that this website is cookie-free. But if you kindly ask, we‘ll give it a try and bake some for you.",
   "check.out.appetizers": "check out our <strong>app</strong>etizers",
   "portfolio.what.we.do": "Impressions of what we do:",
   "portfolio.img.interaction": "Interaction",
@@ -50,13 +54,14 @@ module.exports = {
   "portfolio.happy.software": "<strong>happy</strong> software",
   "portfolio.img.cat": "Cat",
   "about.we.are":
-    "We are a group of friends - designers, programmers and good souls - from the Impact Hub Zurich community - a coworking ecosystem with over 1000 members. We decided to put our heads together and <strong>happy</strong> was born.",
+    "We are a group of friends - designers, programmers, and good souls - from the Impact Hub Zurich community - a coworking ecosystem with over 1000 members. We decided to put our heads together to create <strong>purposeful software for social and environmental impact</strong>.",
   "about.we.create":
-    " We create software that puts people first - we prototype, test, learn and improve. Our software is and will always be open source. We also share what we have learned.",
+    "Our software is and will always be open source. We also share what we have learned.",
+  "about.social.code": "social code + openness = happiness",
   "about.we.love":
-    " We particularly love to make software for people who are less privileged, frail, disadvantaged or discriminated against.",
-  "about.we.happy":
-    "We celebrate friendship, openness and tolerance. We were born to learn. Our goal is to make people <strong>happy</strong>.",
+    "We particularly love to make software for people who are less privileged, frail, disadvantaged, or discriminated against.",
+  "about.we.happy": "Our goal is to make people <strong>happy</strong>.",
+  "about.peace": "Peace, love & happiness.",
   "about.contact.get.happy.too": "get <strong>happy</strong> too",
   "about.contact.way": "We’re sure there is a way to make you happy.",
   "about.contact.your.name": "Your name",
@@ -65,6 +70,8 @@ module.exports = {
   "about.contact.your.message": "Your message",
   "about.contact.thanks": "Thanks!",
   "about.contact.oops": "Ooops! There was an error.",
+  "about.contact.language":
+    "On parle volontiers français, deutsch und schwiizerdüütsch.",
   "footer.customfuture":
     "We are an independent republic of customfuture SA - a global innovation and design firm.",
 }

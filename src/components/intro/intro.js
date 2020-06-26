@@ -123,6 +123,21 @@ class Intro extends React.Component {
               <FormattedMessage id="refuse.content" />
             </p>
           </RValue>
+
+          <div className={styles.weMake}>
+            <p>
+              <FormattedMessage
+                id="we.make"
+                values={{
+                  strong: (...chunks) => <strong>{chunks}</strong>,
+                }}
+              />
+            </p>
+
+            <p>
+              <FormattedMessage id="no.cookie" />
+            </p>
+          </div>
         </section>
       </>
     )

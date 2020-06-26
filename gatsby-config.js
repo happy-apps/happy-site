@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Happy Apps`,
-    description: `Apps that makes people happy`,
+    description: `Apps development agency that makes people happy`,
     author: `David Dal Busco`,
     url: `https://happy-apps.org`,
     image: "/images/happy-meta.png",
