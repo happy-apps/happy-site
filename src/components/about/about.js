@@ -195,7 +195,7 @@ class About extends React.Component {
                 )}
               </form>
 
-              <p>
+              <p className={styles.language}>
                 <FormattedMessage id="about.contact.language" />
               </p>
             </div>
