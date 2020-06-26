@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
 
+import { Link } from "gatsby"
+
 import styles from "./navigation.module.scss"
 
 import Menu from "../menu/menu"
@@ -53,12 +55,14 @@ class Navigation extends React.Component {
           this.state.scrolled ? `${styles.fix}` : ""
         }`}
       >
-        <img
-          src={"/images/happy-logo.svg"}
-          role="presentation"
-          alt="Happy Logo"
-          className={`${styles.logo}`}
-        />
+        <Link to={`/${this.props.langKey}`}>
+          <img
+            src={"/images/happy-logo.svg"}
+            role="presentation"
+            alt="Happy Logo"
+            className={`${styles.logo}`}
+          />
+        </Link>
 
         <button
           title={
