@@ -56,7 +56,7 @@ module.exports = {
   "about.we.are":
     "We are a group of friends - designers, programmers, and good souls - from the Impact Hub Zurich community - a coworking ecosystem with over 1000 members. We decided to put our heads together to create <strong>purposeful software for social and environmental impact</strong>.",
   "about.we.create":
-    "Our software is and will always be open source. We also share what we have learned.",
+    "Our software is and will always be open source by default. We also share what we have learned.",
   "about.social.code": "social code + openness = happiness",
   "about.we.love":
     "We particularly love to make software for people who are less privileged, frail, disadvantaged, or discriminated against.",
