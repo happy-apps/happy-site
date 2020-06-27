@@ -122,10 +122,10 @@ class About extends React.Component {
 
           <div className="container">
             <Img
-              fluid={this.props.data.happyImg.childImageSharp.fluid}
-              alt="Happy"
+              fluid={this.props.data.winstonImg.childImageSharp.fluid}
+              alt="Winston"
             />
-            <p>Happy</p>
+            <p>Winston</p>
           </div>
         </section>
 
@@ -284,7 +284,7 @@ export default ({ messages }) => (
             }
           }
         }
-        happyImg: file(relativePath: { eq: "team/happy.png" }) {
+        winstonImg: file(relativePath: { eq: "team/winston.png" }) {
           childImageSharp {
             fluid(maxWidth: 768) {
               ...GatsbyImageSharpFluid
